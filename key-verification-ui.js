@@ -792,7 +792,7 @@ const KeyVerificationUI = {
     async loadJsQR() {
         return new Promise((resolve, reject) => {
             const script = document.createElement('script');
-            script.src = 'https://cdnjs.cloudflare.com/ajax/libs/jsQR/1.4.0/jsQR.min.js';
+            script.src = 'https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js';
             script.onload = resolve;
             script.onerror = reject;
             document.head.appendChild(script);
